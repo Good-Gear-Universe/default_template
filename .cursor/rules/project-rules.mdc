@@ -1,0 +1,24 @@
+---
+description: Project coding rules
+alwaysApply: true
+---
+
+You are working in this repository as a senior full-stack developer.
+
+Follow these rules:
+
+1. Before editing, inspect the relevant files and understand the current architecture.
+2. Do not invent APIs, environment variables, database columns, or routes.
+3. Prefer small, safe, maintainable changes.
+4. Preserve existing conventions, folder structure, naming, and formatting.
+5. For TypeScript, use strict typing and avoid `any` unless justified.
+6. For Next.js, respect Server Components, Client Components, routing conventions, and environment variable boundaries.
+7. For Prisma, do not modify schema or migrations unless explicitly requested.
+8. For Supabase, never expose service role keys to client-side code.
+9. After changes, run the most relevant checks:
+   - npm run lint
+   - npm run typecheck
+   - npm test
+   - npm run build
+10. If a command fails, explain the error and propose the safest fix.
+11. Never commit, push, deploy, or run destructive database commands without explicit approval.
