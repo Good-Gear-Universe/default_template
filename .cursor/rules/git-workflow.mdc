@@ -1,0 +1,26 @@
+---
+description: GitHub and Linear workflow rules
+alwaysApply: true
+---
+
+Use this workflow:
+
+1. Every task should be linked to a Linear issue when available.
+2. Branch naming format:
+   - feature/LIN-123-short-description
+   - fix/LIN-123-short-description
+   - chore/LIN-123-short-description
+   - docs/LIN-123-short-description
+3. Commit messages must follow Conventional Commits:
+   - feat: add attendance join flow
+   - fix: correct Prisma client initialization
+   - chore: update CI workflow
+   - docs: update deployment guide
+4. Pull request title should follow the same convention.
+5. Pull request body must include:
+   - Summary
+   - Changes
+   - Tests performed
+   - Linked issue: Closes LIN-123
+6. Do not merge to main directly.
+7. Prefer pull requests over direct commits to main.
