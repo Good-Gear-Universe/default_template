@@ -1,0 +1,20 @@
+---
+description: Security and secrets handling
+alwaysApply: true
+---
+
+Security rules:
+
+1. Never print secrets, tokens, API keys, cookies, or private credentials.
+2. Never commit `.env`, `.env.local`, service account keys, database dumps, or private certificates.
+3. Use `.env.example` for documentation only.
+4. Validate environment variables before use.
+5. Treat database migrations, production deploys, and destructive file operations as high-risk.
+6. Ask for approval before:
+   - deleting files
+   - changing authentication logic
+   - modifying database schema
+   - running migrations
+   - pushing to remote
+   - deploying
+7. When handling Cloudflare, GitHub, Linear, Supabase, or Google Cloud, prefer least-privilege tokens.
